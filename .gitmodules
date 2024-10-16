@@ -1,0 +1,3 @@
+[submodule "themes/shane_hugo_theme"]
+	path = themes/shane_hugo_theme
+	url = https://github.com/zhangxingeng/shane-hugo-theme.git
