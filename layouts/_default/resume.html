@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "resume/head.html" . -}}
+    <body>
+        {{- partial "resume/header.html" . -}}
+        <div id="content">
+        {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "resume/footer.html" . -}}
+    </body>
+</html>
