@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html>
-    {{- partial "resume/head.html" . -}}
-    <body>
-        {{- partial "resume/header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "resume/footer.html" . -}}
-    </body>
-</html>
+{{ define "main" }}
+    <div>
+        <h1>{{ .Title }}</h1>
+        <div id="content">{{ .Content }}</div>
+    </div>
+    {{ partialCached "footer/footer" . }}
+{{ end }}
